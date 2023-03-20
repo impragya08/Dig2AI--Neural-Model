@@ -14,7 +14,7 @@ Here's what you I leart from the video "Building a neural network FROM SCRATCH (
 ## Project Description:
 The objective of this project is to build a neural network using only Python's NumPy library and mathematical equations to classify images from the MNIST dataset. The neural network will be trained on a subset of the dataset and then tested on a separate validation set. The final accuracy of the model will be evaluated and reported.
 
-##Project Details:
+## Project Details:
 
 Data preprocessing: The first step is to preprocess the MNIST dataset by flattening the 28x28 pixel grayscale images into a 784-dimensional feature vector. Additionally, the labels for each image will need to be one-hot encoded.
 
