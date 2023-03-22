@@ -16,15 +16,15 @@ The objective of this project is to build a neural network using only Python's N
 
 ## Project Details:
 
-Data preprocessing : The first step is to preprocess the MNIST dataset by flattening the 28x28 pixel grayscale images into a 784-dimensional feature vector. Additionally, the labels for each image will need to be one-hot encoded.
+* Data preprocessing : The first step is to preprocess the MNIST dataset by flattening the 28x28 pixel grayscale images into a 784-dimensional feature vector. Additionally, the labels for each image will need to be one-hot encoded.
 
-Neural network architecture: The next step is to define the architecture of the neural network. For this project, a fully connected feedforward network with one hidden layer will be used. The number of nodes in the input layer will be 784 (the number of features in each image), the number of nodes in the hidden layer will be user-defined, and the number of nodes in the output layer will be 10 (one for each digit from 0-9).
+* Neural network architecture: The next step is to define the architecture of the neural network. For this project, a fully connected feedforward network with one hidden layer will be used. The number of nodes in the input layer will be 784 (the number of features in each image), the number of nodes in the hidden layer will be user-defined, and the number of nodes in the output layer will be 10 (one for each digit from 0-9).
 
-Feedforward process: The feedforward process involves passing the input data through the network to produce an output. This will be implemented using mathematical equations and NumPy.
+* Feedforward process: The feedforward process involves passing the input data through the network to produce an output. This will be implemented using mathematical equations and NumPy.
 
-Backpropagation algorithm: The backpropagation algorithm adjusts the weights in the network based on the error between the predicted output and the actual output. This will also be implemented using mathematical equations and NumPy.
+* Backpropagation algorithm: The backpropagation algorithm adjusts the weights in the network based on the error between the predicted output and the actual output. This will also be implemented using mathematical equations and NumPy.
 
-Training and validation: The model will be trained on a subset of the MNIST dataset and then validated on a separate validation set. The number of epochs and learning rate will be hyperparameters that can be adjusted to optimize the performance of the model.
+* Training and validation: The model will be trained on a subset of the MNIST dataset and then validated on a separate validation set. The number of epochs and learning rate will be hyperparameters that can be adjusted to optimize the performance of the model.
 
-Model evaluation: The final accuracy of the model will be evaluated on the validation set and reported.
+* Model evaluation: The final accuracy of the model will be evaluated on the validation set and reported.
 
