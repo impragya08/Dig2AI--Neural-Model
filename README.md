@@ -1,30 +1,33 @@
-# NumPy_Project
+# Handwritten Digit Recognition Neural Network- Dig2AI
+This project implements a simple neural network using the NumPy library to recognize handwritten digits from the MNIST dataset. The neural network architecture includes one hidden layer and uses the Rectified Linear Unit (ReLU) activation function for the hidden layer and the SoftMax activation function for the output layer. The network is trained using gradient descent to minimize the cross-entropy loss.
 
-Here's what you I leart from the video "Building a neural network FROM SCRATCH (no Tensorflow/Pytorch, just numpy & math) by Samson Zhang":
-
-* The basic structure of a neural network, including input, output, and hidden layers.
-* The feedforward process, which involves passing input data through the network to produce an output.
-* The backpropagation algorithm, which adjusts the weights in the network based on the error between the predicted output and the actual output.
-* The importance of activation functions in neural networks, which help introduce non-linearity and make the network more powerful.
-* How to implement a neural network using only Python's NumPy library and mathematical equations.
-* How to code the feedforward process, backpropagation algorithm, and weight updates in Python using NumPy.
-* How to train a neural network to perform a specific task, such as image classification or regression.
+![Screenshot (106)](https://github.com/impragya08/Dig2AI--Neural-Model/assets/84717393/a1736e96-2b28-43d0-8663-460d90d6830a)
 
 
-## Project Description:
-The objective of this project is to build a neural network using only Python's NumPy library and mathematical equations to classify images from the MNIST dataset. The neural network will be trained on a subset of the dataset and then tested on a separate validation set. The final accuracy of the model will be evaluated and reported.
+# Project Overview
+This project aims to demonstrate the implementation of a neural network for handwritten digit recognition. The neural network is built using the NumPy library and includes key components such as data preprocessing, forward and backward propagation, gradient descent, and prediction. The project emphasizes understanding the fundamental concepts of neural networks and implementing them from scratch.
 
-## Project Details:
+# Dataset
+The MNIST dataset is used for training and validation. This dataset consists of 28x28 grayscale images of handwritten digits (0 to 9) and their corresponding labels. The dataset is preprocessed by flattening the images into 784-dimensional feature vectors and normalizing pixel values to the range [0, 1].
 
-* Data preprocessing : The first step is to preprocess the MNIST dataset by flattening the 28x28 pixel grayscale images into a 784-dimensional feature vector. Additionally, the labels for each image will need to be one-hot encoded.
+# Getting Started
+Clone the repository or download the project files.
+Ensure you have the required libraries installed, such as NumPy and Matplotlib.
+Run the provided Python script to train the neural network.
+Neural Network Architecture
+The neural network consists of an input layer with 784 nodes (one for each pixel), a hidden layer with ReLU activation, and an output layer with SoftMax activation. The architecture parameters can be adjusted based on the problem requirements.
 
-* Neural network architecture: The next step is to define the architecture of the neural network. For this project, a fully connected feedforward network with one hidden layer will be used. The number of nodes in the input layer will be 784 (the number of features in each image), the number of nodes in the hidden layer will be user-defined, and the number of nodes in the output layer will be 10 (one for each digit from 0-9).
+# Training
+The network is trained using gradient descent to minimize the cross-entropy loss. The training process involves forward propagation to compute activations, backward propagation to compute gradients, and updating weights and biases using the calculated gradients and a learning rate.
 
-* Feedforward process: The feedforward process involves passing the input data through the network to produce an output. This will be implemented using mathematical equations and NumPy.
+# Making Predictions
+After training, the model can make predictions for new inputs. The provided make_predictions function computes the predicted class labels for a given input by applying the trained neural network.
 
-* Backpropagation algorithm: The backpropagation algorithm adjusts the weights in the network based on the error between the predicted output and the actual output. This will also be implemented using mathematical equations and NumPy.
+# Results and Visualization
+The project includes visualization of predictions for a few examples using the matplotlib library. Predicted labels are compared with actual labels, and the input images are displayed alongside the predictions.
 
-* Training and validation: The model will be trained on a subset of the MNIST dataset and then validated on a separate validation set. The number of epochs and learning rate will be hyperparameters that can be adjusted to optimize the performance of the model.
+# Contributing
+Contributions to this project are welcome! If you find any issues or want to enhance the code, feel free to submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
 
-* Model evaluation: The final accuracy of the model will be evaluated on the validation set and reported.
+
 
